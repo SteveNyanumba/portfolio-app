@@ -1,0 +1,31 @@
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Animated Headlines
+@import '~jquery-animated-headlines/src/scss/jquery.animatedheadline.scss';
+
+
+// Animated Headlines
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/v4-shims.scss';
+
+//Owl Carousel
+$owl-image-path : "../img/";
+@import'~owl.carousel/src/scss/owl.carousel.scss';
+@import'~owl.carousel/src/scss/owl.theme.default.scss';
+@import'~owl.carousel/src/scss/owl.theme.green.scss';
+
+//Simplebar
+@import'~simplebar/src/simplebar.css';
+
+//Animated Headlines
+@import '~jquery-animated-headlines/src/scss/jquery.animatedheadline.scss';
+
+//Magnific Popup
+@import '~magnific-popup/src/css/main.scss';
+
+// Custom Styles
+@import 'custom';
