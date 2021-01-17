@@ -98994,9 +98994,9 @@ function initMap() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\stevenyanumba\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\laragon\www\stevenyanumba\resources\sass\main.scss */"./resources/sass/main.scss");
-module.exports = __webpack_require__(/*! C:\laragon\www\stevenyanumba\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! C:\Users\Steve Nyanumba\Desktop\My Apps\SteveNyanumba\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\Steve Nyanumba\Desktop\My Apps\SteveNyanumba\resources\sass\main.scss */"./resources/sass/main.scss");
+module.exports = __webpack_require__(/*! C:\Users\Steve Nyanumba\Desktop\My Apps\SteveNyanumba\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })
