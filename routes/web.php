@@ -24,17 +24,17 @@ Route::redirect('/admin', '/user/dashboard', 301);
 
 Route::group(['prefix' => '/user'], function () {
     // Dashboard Route
-    Route::middleware(['auth:firebase', 'verified'])->get('/dashboard', function () {
+    Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
         return Inertia\Inertia::render('Dashboard');
     })->name('dashboard');
 
     //Portfolios Routes
-    Route::middleware(['auth:firebase', 'verified'])->get('/portfolio', function () {
+    Route::middleware(['auth:sanctum', 'verified'])->get('/portfolio', function () {
         return Inertia\Inertia::render('Portfolio');
     })->name('portfolio');
 
     //Blogs Routes
-    Route::middleware(['auth:firebase', 'verified'])->get('/blog', function () {
+    Route::middleware(['auth:sanctum', 'verified'])->get('/blog', function () {
         return Inertia\Inertia::render('Blog');
     })->name('blog');
 });

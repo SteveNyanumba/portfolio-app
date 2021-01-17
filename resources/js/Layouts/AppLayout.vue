@@ -1,6 +1,6 @@
 <template>
     <div class="min-h-screen bg-gray-700">
-        <nav class="bg-white border-b border-gray-100">
+        <nav class="bg-red-800 border-b-2 border-yellow-400">
             <!-- Primary Navigation Menu -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
@@ -48,7 +48,7 @@
 
                                 <template #content>
                                     <!-- Account Management -->
-                                    <div class="block px-4 py-2 text-xs text-gray-400">
+                                    <div class="block px-4 py-2 text-xs text-white">
                                         Manage Account
                                     </div>
 

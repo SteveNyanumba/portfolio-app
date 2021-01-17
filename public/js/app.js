@@ -80727,7 +80727,7 @@ var render = function() {
     "div",
     { staticClass: "min-h-screen bg-gray-700" },
     [
-      _c("nav", { staticClass: "bg-white border-b border-gray-100" }, [
+      _c("nav", { staticClass: "bg-red-800 border-b-2 border-yellow-400" }, [
         _c("div", { staticClass: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" }, [
           _c("div", { staticClass: "flex justify-between h-16" }, [
             _c("div", { staticClass: "flex" }, [
@@ -80883,7 +80883,7 @@ var render = function() {
                                 "div",
                                 {
                                   staticClass:
-                                    "block px-4 py-2 text-xs text-gray-400"
+                                    "block px-4 py-2 text-xs text-white"
                                 },
                                 [
                                   _vm._v(
