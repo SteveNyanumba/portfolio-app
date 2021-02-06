@@ -17,4 +17,5 @@ mix.js('resources/js/app.js', 'public/js')
         require('tailwindcss'),
     ])
     .webpackConfig(require('./webpack.config'))
-    .sass('resources/sass/main.scss','public/css');
+    .sass('resources/sass/main.scss','public/css')
+    .sass('resources/sass/fontawesome.scss','public/css');

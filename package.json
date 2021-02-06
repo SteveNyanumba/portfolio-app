@@ -30,6 +30,7 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.1",
         "bootstrap": "^4.5.3",
+        "cropperjs": "^1.5.9",
         "isotope-layout": "^3.0.6",
         "jquery": "^3.5.1",
         "jquery-animated-headlines": "^1.0.0",
@@ -39,6 +40,7 @@
         "popper.js": "^1.16.1",
         "sass": "^1.30.0",
         "simplebar": "^5.3.0",
+        "sweetalert2": "^10.14.0",
         "yt-player": "^3.5.0"
     }
 }

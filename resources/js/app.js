@@ -1,13 +1,16 @@
 require('./bootstrap');
 require('./main')
-
+require('@fortawesome/fontawesome-free')
 require('moment');
+// import Cropper from 'cropperjs'
 
 import Vue from 'vue';
 
 import { InertiaApp } from '@inertiajs/inertia-vue';
 import { InertiaForm } from 'laravel-jetstream';
 import PortalVue from 'portal-vue';
+
+import '@/components';
 
 Vue.mixin({ methods: { route } });
 Vue.use(InertiaApp);
@@ -25,3 +28,12 @@ new Vue({
             },
         }),
 }).$mount(app);
+
+const Swal = require('sweetalert2')
+window.Toast = Swal.mixin({
+    toast:true,
+    position: 'top-right',
+    timer: 5000
+})
+
+window.Bus = new Vue()

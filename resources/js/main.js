@@ -38,7 +38,7 @@ $(window).on('load', function() {
 				1. Preloader and Particles
 	----------------------------------- */
     $("#preloader").delay(1000).fadeOut();
-    particlesJS.load('particles-js', 'js/particles.json', function() {
+    particlesJS.load('particles-js', '/js/particles.json', function() {
         console.log('callback - particles.js config loaded');
     });
 
@@ -247,7 +247,7 @@ $(document).ready(function() {
 	/* -----------------------------------
 	      	7. YouTube Video
 	----------------------------------- */
-    $('#play-video').YTPlayer()
+    // $('#play-video').YTPlayer()
 
 
 	/* -----------------------------------

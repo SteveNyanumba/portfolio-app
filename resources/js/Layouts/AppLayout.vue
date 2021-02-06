@@ -1,6 +1,6 @@
 <template>
     <div class="min-h-screen bg-gray-700">
-        <nav class="bg-red-800 border-b-2 border-yellow-400">
+        <nav class="bg-blue-700 border-b-4 border-white">
             <!-- Primary Navigation Menu -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
@@ -8,7 +8,7 @@
                         <!-- Logo -->
                         <div class="flex-shrink-0 flex items-center">
                             <inertia-link :href="route('dashboard')">
-                                <jet-application-mark class="block h-9 w-auto" />
+                                <jet-application-mark class="block w-auto h-10" />
                             </inertia-link>
                         </div>
 
@@ -35,7 +35,7 @@
                                         <img class="h-8 w-8 rounded-full object-cover" :src="$page.user.profile_photo_url" :alt="$page.user.name" />
                                     </button>
 
-                                    <button v-else class="flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                                    <button v-else class="flex items-center text-sm font-medium text-yellow-400 hover:text-white hover:border-gray-300 focus:outline-none focus:text-white focus:border-yellow-400 transition duration-150 ease-in-out">
                                         <div>{{ $page.user.name }}</div>
 
                                         <div class="ml-1">
@@ -127,6 +127,12 @@
                     <jet-responsive-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
                         Dashboard
                     </jet-responsive-nav-link>
+                    <jet-responsive-nav-link :href="route('portfolio')" :active="route().current('portfolio')">
+                        Portfolio
+                    </jet-responsive-nav-link>
+                    <jet-responsive-nav-link :href="route('blog')" :active="route().current('blog')">
+                        Blog
+                    </jet-responsive-nav-link>
                 </div>
 
                 <!-- Responsive Settings Options -->
@@ -146,10 +152,10 @@
                         <jet-responsive-nav-link :href="route('profile.show')" :active="route().current('profile.show')">
                             Profile
                         </jet-responsive-nav-link>
-
+<!--
                         <jet-responsive-nav-link :href="route('api-tokens.index')" :active="route().current('api-tokens.index')" v-if="$page.jetstream.hasApiFeatures">
                             API Tokens
-                        </jet-responsive-nav-link>
+                        </jet-responsive-nav-link> -->
 
                         <!-- Authentication -->
                         <form method="POST" @submit.prevent="logout">
@@ -199,8 +205,8 @@
         </nav>
 
         <!-- Page Heading -->
-        <header class="bg-white shadow">
-            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <header class="bg-blue-600 shadow">
+            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 ">
                 <slot name="header"></slot>
             </div>
         </header>

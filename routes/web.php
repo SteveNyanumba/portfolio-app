@@ -38,3 +38,13 @@ Route::group(['prefix' => '/user'], function () {
         return Inertia\Inertia::render('Blog');
     })->name('blog');
 });
+
+
+Route::group(['prefix' => 'api', 'middleware' => []], function () {
+    Route::apiResource('portfolio', 'App\Http\Controllers\PortfoliosController');
+    Route::apiResource('blog', 'App\Http\Controllers\BlogsController');
+    Route::apiResource('groups', 'App\Http\Controllers\GroupsController');
+    Route::apiResource('screenshots', 'App\Http\Controllers\ScreenshotsController');
+    Route::apiResource('categories', 'App\Http\Controllers\categoriesController');
+
+});
